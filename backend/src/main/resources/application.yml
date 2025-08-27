@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/odmsdb
+    username: root
+    password: root
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+mybatis:
+  configuration:
+    # 自动转换驼峰命名和下划线命名
+    map-underscore-to-camel-case: true
+    # 允许使用动态SQL
+    use-generated-keys: true
+
